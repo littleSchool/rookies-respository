@@ -1,5 +1,5 @@
 <template>
-  <div class="card"
+  <div class="card">
     <p class="card">
       {{text}}
     </p>
