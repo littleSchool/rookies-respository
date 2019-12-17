@@ -25,42 +25,41 @@
 
 <script>
 export default {
-  name:"Home",
-  data(){
-    return{
-      features:[{
-        title:'皮卡丘'
-      },
-      { 
-        title:'皮卡丘'
+  name: 'Home',
+  data () {
+    return {
+      features: [{
+        title: '皮卡丘'
       },
       {
-        title:'皮卡丘'
+        title: '皮卡丘'
       },
       {
-        title:'皮卡丘'
+        title: '皮卡丘'
+      },
+      {
+        title: '皮卡丘'
       }],
-      currentIndex:0,
-      items:[
-      {id:1,url:"/static/images/home.png" },
-      {id:2,url:"/static/images/home_1.png"},
-      {id:3,url:"/static/images/home_3.png"}],
-    title:['經典','爆款','流行'],
+      currentIndex: 0,
+      items: [
+        {id: 1, url: '/static/images/home.png'},
+        {id: 2, url: '/static/images/home_1.png'},
+        {id: 3, url: '/static/images/home_3.png'}],
+      title: ['經典', '爆款', '流行']
     }
   },
   methods: {
-     featureClick(index){
-      //跳轉到對應到頁面
-      let url ='/pages/detail/main'
-      console.log(index);
+    featureClick (index) {
+      // 跳轉到對應到頁面
+      let url = '/pages/detail/main'
+      console.log(index)
       // wx.switchTab({url})
       wx.navigateTo({url})
     }
   },
-    tabClick(index){
-      this.currentIndex = index
-    }
-
+  tabClick (index) {
+    this.currentIndex = index
+  }
 
 }
 </script>

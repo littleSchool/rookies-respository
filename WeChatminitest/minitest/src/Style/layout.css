@@ -1,0 +1,9 @@
+.content{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100vh;
+}
+.main{
+  flex: 1;
+}
